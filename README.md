@@ -29,10 +29,10 @@ This application provides a RESTful API for:
 
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone https://github.com/dipeshsingh253/equation-service
 
 # Navigate to project directory
-cd algebraic-equation-solver
+cd equation-service
 
 # Build the project
 mvn clean install
@@ -45,7 +45,7 @@ mvn clean install
 mvn spring-boot:run
 
 # Or run the JAR file directly
-java -jar target/algebraic-equation-solver-1.0.0.jar
+java -jar target/equation-service-0.0.1-SNAPSHOT.jar
 ```
 
 The application will start on `http://localhost:8080`
