@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "15ada0f5-3941-456a-9980-d41385357dd5",
+		"name": "equation-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24274064",
+		"_collection_link": "https://grey-meteor-238865.postman.co/workspace/Local-Development~9360fe2d-876e-4e43-938a-c083720bbe31/collection/24274064-15ada0f5-3941-456a-9980-d41385357dd5?action=share&source=collection_link&creator=24274064"
+	},
+	"item": [
+		{
+			"name": "retrieve all equations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/equation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store a new equation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"equation\": \"3x + 2y - z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/equation/store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equation",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evaluate equation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"variables\" : {\r\n        \"x\" : 2,\r\n        \"y\" : 3,\r\n        \"z\" : 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/equation/1/evaluate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equation",
+						"1",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
